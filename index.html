@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number - VeressWEBs</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body id="page">
+    <header class="header" data-aos="fade-down" data-aos-duration="1500">
+      <button class="reset" id="reset">RESET</button>
+      <p class="game-rule">{ Between 1 and 100 }</p>
+    </header>
+    <main class="main" data-aos="fade-up" data-aos-duration="1500">
+      <span class="main-goal">Guess My Number!</span>
+      <div class="secret-number">
+        <span class="question-mark" id="correctNumber">?</span>
+      </div>
+      <div class="datas">
+        <div class="data-input">
+          <input type="number" placeholder="guess" class="input-num" id="guess" min="1" max="100"/>
+          <button class="data-button" id="button">Guess!</button>
+        </div>
+        <div class="data-details">
+          <span class="too-low-or-high" id="help">Start the Game!</span>
+          <span>Your Score: <span id="currentScore">100</span></span>
+          <span>Max Score: <span id="bestScore"></span></span>
+        </div>
+      </div>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
